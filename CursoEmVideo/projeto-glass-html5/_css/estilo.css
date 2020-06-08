@@ -129,6 +129,21 @@ section#corpo{
     padding-right: 20px;
 }
 
+table#tabelaEspec caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaEspec caption samp{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
+
 table#tabelaEspec{
     border: 1px solid #606060;
     border-spacing: 0px;
@@ -140,8 +155,20 @@ table#tabelaEspec{
 table#tabelaEspec td{
     border: 1px solid #606060;
     padding: 10px;
+    vertical-align: middle;
+}
+
+table#tabelaEspec td.ce{
+    color: white;
+    background-color: #606060;
     text-align: right;
     vertical-align: top;
+    font-weight: bolder;
+}
+
+table#tabelaEspec td.cd{
+    background-color: #cecece;
+    text-align: left;
 }
 
 aside#lateral{
