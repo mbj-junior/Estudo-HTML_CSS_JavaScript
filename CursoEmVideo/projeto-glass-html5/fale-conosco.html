@@ -46,7 +46,7 @@
         </article>
     </section>
 
-    <form>
+    <form method="post" action="mailto:mbj_junior@hotmail.com" id="fContato">
         <fieldset id="usuario">
             <legend>Identificação do Usuário</legend>
             <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="25" placeholder="Nome completo"></p>
@@ -64,14 +64,34 @@
             <legend>Endereço do Usuário</legend>
             <p><label for="cRua">Logradouro:</label><input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua , Av"></p>
             <p><label for="cNum">Número:</label><input type="number" name="tnum" id="cNum" min="1" max="999999" placeholder="numero"></p>
-            <p><label for="cEst">Estado:</label><input type="text" name="tEst" id="cEst" size="2" maxlength="2"></p>
-            Cidade:
+            <p><label for="cEst">Estado:</label>
+                <select name="tEst" id="cEst">
+                    <optgroup label="Sudeste">
+                        <option value="RJ">RJ</option>
+                        <option value="SP" selected>SP</option>
+                        <option value="MG">MG</option>
+                    </optgroup>
+                        <optgroup label="Sul">
+                        <option value="PR">PR</option>
+                        <option value="RS">RS</option>
+                    </optgroup> 
+                </select></p>
+                
+            <p><label for="cCit">Cidade:</label><input type="text" name="tCit" id="cCit" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"></p>
+            <datalist id="cidades">
+                <option value="São Paulo"></option>
+                <option value="Campinas"></option>
+                <option value="Atibaia"></option>
+                <option value="Valinhos"></option>
+            </datalist>
+
         </fieldset>
 
         <fieldset id="mensagem">
             <legend>Mensagem do Usuário</legend>
-            Grau de Urgência:
-            Mensagem:
+            <p><label for="cUrg">Grau de Urgência:</label> Min <input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"> Máx</p>
+            <p><label for="cMsg">Mensagem:</label><textarea name="tMsg" id="cMsg" cols="45" rows="5"></textarea></p>
+            
         </fieldset>
         
         <fieldset id="comprar">
