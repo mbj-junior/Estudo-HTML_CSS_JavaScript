@@ -1,0 +1,37 @@
+<canvas width="600" height="400"> 
+</canvas>
+
+
+<script>
+
+    let tela = document.querySelector('canvas');
+    let pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'white';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo (x, y, raio){
+        pincel.fillStyle = 'red';
+        pincel.beginPath();
+        pincel.arc(x,y,raio,0,2*Math.PI);
+        pincel.fill();
+    }
+
+    function limpaTela(){
+        pincel.clearRect(0, 0, 600, 400);
+    }
+
+    let x = 20;
+
+    function movimento(){
+        limpaTela();
+        desenhaCirculo(x,20,10);
+        x++;
+    }
+
+    setInterval(movimento, 20);
+
+
+
+
+</script>
