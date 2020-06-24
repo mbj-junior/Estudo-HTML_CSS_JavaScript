@@ -76,3 +76,15 @@ nav a:hover {
     font-weight: bolder;
     margin-top: 10px;
 }
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 40px;
+}
+
+footer p {
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
