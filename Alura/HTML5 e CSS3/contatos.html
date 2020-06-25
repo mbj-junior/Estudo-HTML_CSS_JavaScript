@@ -27,35 +27,34 @@
     <main>
         <form action="">
             <label for="nomeSobrenome">Nome e Sobrenome</label>
-            <input type="text" id="nomeSobrenome" class="input-padrao">
+            <input type="text" id="nomeSobrenome" class="input-padrao" placeholder="Silva da Silva" required>
 
             <label for="email">E-mail</label>
-            <input type="text" id="email" class="input-padrao">
+            <input type="email" id="email" class="input-padrao" placeholder="email@email.com" required>
 
             <label for="telefone">Telefone</label>
-            <input type="text" id="telefone" class="input-padrao">
+            <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXX-XXXX" required>
 
-            <label for="mensagem">mensagem</label>
-            <textarea id="mensagem" cols="72" rows="10"></textarea>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="72" rows="10" placeholder="Mensagens aqui" required></textarea>
 
             <div>
                 <p>Método de contato</p>
                 <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
                 <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
-                <label for="radio-whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp">WhatsApp</label>
-
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label>
             </div>
 
             <div>
                 <p>Horário de atendimento</p>
-                <select name="" id="">
+                <select>
                     <option value="">Manhã</option>
                     <option value="">Tarde</option>
                     <option value="">Noite</option>
                 </select>
             </div>
 
-            <label class="checkbox"><input type="checkbox">Receber novidades</label>
+            <label class="checkbox"><input type="checkbox" checked>Receber novidades</label>
 
             <input type="submit" value="Enviar Form">
         </form>
