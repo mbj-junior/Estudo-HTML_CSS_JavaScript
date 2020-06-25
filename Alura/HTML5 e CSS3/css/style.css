@@ -125,11 +125,27 @@ form legend {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    transition: 0.5s background;
+    transition: 0.5s all;
     cursor: pointer;
 }
 
 .enviar:hover {
     background-color: orangered;
     transform: scale(1.05);
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background-color: #555555;
+    color: white;
+    font-weight: bolder;
+}
+
+td,
+th {
+    border: black 1px solid;
+    padding: 8px 15px;
 }
