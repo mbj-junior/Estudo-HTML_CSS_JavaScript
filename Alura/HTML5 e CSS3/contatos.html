@@ -38,25 +38,25 @@
             <label for="mensagem">Mensagem</label>
             <textarea id="mensagem" cols="72" rows="10" placeholder="Mensagens aqui" required></textarea>
 
-            <div>
-                <p>Método de contato</p>
+            <fieldset>
+                <legend>Método de contato</legend>
                 <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
                 <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
                 <label for="radio-whatsapp"><input type="radio" name="contato" value="WhatsApp" id="radio-whatsapp" checked>WhatsApp</label>
-            </div>
+            </fieldset>
 
-            <div>
-                <p>Horário de atendimento</p>
+            <fieldset>
+                <legend>Horário de atendimento</legend>
                 <select>
                     <option value="">Manhã</option>
                     <option value="">Tarde</option>
                     <option value="">Noite</option>
                 </select>
-            </div>
+            </fieldset>
 
             <label class="checkbox"><input type="checkbox" checked>Receber novidades</label>
 
-            <input type="submit" value="Enviar Form">
+            <input type="submit" value="Enviar Form" class="enviar">
         </form>
     </main>
 
