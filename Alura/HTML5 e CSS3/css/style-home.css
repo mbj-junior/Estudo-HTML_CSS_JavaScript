@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
     background-color: #bbbbbb;
     padding: 20px;
@@ -32,25 +36,39 @@ nav a:hover {
     color: #c78C19;
 }
 
-#banner {
+main {
+    width: 940px;
+    margin: auto;
+}
+
+.banner {
     width: 100%;
 }
 
-.principal {
-    background: #CCCCCC;
-    padding: 30px;
-}
-
 .titulo-principal {
-    padding-left: 20px;
-}
-
-.titulo-centralizado {
-    text-align: center
-}
-
-p {
     text-align: center;
+    font-size: 2em;
+    padding-left: 20px;
+    margin: 1em;
+    clear: left;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilhos {
+    width: 150px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
 #missao {
