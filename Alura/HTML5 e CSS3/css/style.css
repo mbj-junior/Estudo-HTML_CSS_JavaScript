@@ -32,6 +32,11 @@ nav a:hover {
     color: #c78C19;
 }
 
+main {
+    width: 940px;
+    margin: auto;
+}
+
 .produtos {
     width: 940px;
     margin: auto;
@@ -87,4 +92,21 @@ footer p {
     color: white;
     font-size: 13px;
     margin-top: 20px;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    width: 50%;
 }
